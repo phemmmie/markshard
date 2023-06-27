@@ -12,7 +12,7 @@ jobs:
            aws-region: eu-west-2
            
         - run: |
-           Install-Module -Name AWS.Tools.EC2 -Force
+           Install-Module -Name AWS.Tools.EC2 -Force -AllowClobber
            Get-EC2Vpc
            shell: pwsh
 
